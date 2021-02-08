@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 22px;
+    font-size: 16px;
+    color: #CC9933;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #CC9933;
+    cursor: pointer;
+}
+
+.section-heading {
+    margin-left: 44px;
+    margin-bottom: 22px;
+}
+
+
+/* Header */
+
+.header {
+    height: 154px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-cabinet-link {
+    margin-left: 50px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.header-logo-img {
+    margin-right: 25px;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.search {
+    position: relative;
+    width: 355px;
+    height: 50px;
+    margin-left: 122px;
+}
+
+.search-edit {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    border: none;
+}
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Reservation */
+
+.reservation-ad-container {
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+}
+
+.reservation-field {
+    height: 70px;
+    margin-bottom: 22px;
+}
+
+.reservation-action-btn {
+    margin-right: 30px;
+}
+
+
+/* About */
+
+.about-container {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+
+/* Services */
+
+.services-container {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.services-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.services-item {
+    width: 573px;
+    height: 326px;
+    padding-bottom: 24px;
+}
+
+.services-card {
+    padding: 24px;
+}
+
+
+/* Advantage */
+
+.advantage-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.advantage-item {
+    width: 276px;
+    height: 276px;
+    padding: 45px;
+    padding-bottom: 24px;
+}
+
+
+/* hostels */
+
+.hostels-container {
+    padding-top: 35px;
+}
+
+.hostels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hostels-item {
+    width: 374px;
+    height: 442px;
+    padding-bottom: 24px;
+}
+
+.hostels-card {
+    padding: 24px;
+}
+
+.hostels-card-price-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hostels-card-price-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hostels-card-all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
