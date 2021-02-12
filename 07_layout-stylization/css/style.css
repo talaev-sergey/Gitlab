@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'MullerLight';
+    src: url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerRegular';
+    src: url('../fonts/MullerRegular.woff2') format('woff2'), url('../fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerBold';
+    src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerMedium';
+    src: url('../fonts/MullerMedium.woff2') format('woff2'), url('../fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'MullerRegular', sans-serif;
+    background-color: #F1F1F1;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 22px;
+    font-size: 16px;
+    color: #CC9933;
+    background-color: transparent;
+    border-radius: 12px;
+    border-color: #CC9933;
+    cursor: pointer;
+}
+
+.section-heading {
+    padding-left: 44px;
+    margin-bottom: 22px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 300;
+    color: #333333;
+}
+
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.card-discription {
+    line-height: 30px;
+    color: #333333;
+}
+
+.services-item,
+.advantage-item,
+.hostels-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+    background-image: url("../img/png/triangle.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+
+.header {
+    height: 220px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-cabinet-link {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    color: #CC9933;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.header-logo-img {
+    margin-right: 25px;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.nav-list {
+    display: flex;
+    padding-left: 22px;
+}
+
+.nav-item {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.nav-link {
+    color: #333333;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.search {
+    position: relative;
+    width: 355px;
+    height: 50px;
+    margin-left: 122px;
+}
+
+.search-edit {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    border: none;
+}
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/svg/search.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-number-tel {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 800;
+    color: #666666;
+}
+
+.header-cabinet-link-icon {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url('../img/png/keyboard_tab.png');
+}
+
+
+/* Reservation */
+
+.reservation-ad-container {
+    display: flex;
+    width: 100%;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+}
+
+.reservation-field {
+    height: 70px;
+    margin-bottom: 22px;
+    padding: 22px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+.reservation-action-btn {
+    min-width: 160px;
+    min-height: 70px;
+    margin-right: 30px;
+    padding: 30px;
+    color: #FFFFFF;
+    background-color: #CC9933;
+    border-color: transparent;
+}
+
+.reservation-relult-numbers {
+    color: #CC9933;
+}
+
+.reservation-relult-text {
+    color: #666666;
+}
+
+.ad-item-banner {
+    display: flex;
+    flex-direction: column;
+    width: 595px;
+}
+
+.banner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 595px;
+    height: 540px;
+    padding: 40px;
+    background-image: url('../img/png/22.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
+.banner-heading {
+    font-size: 66px;
+    line-height: 1;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.banner-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.banner-price {
+    margin-right: 43px;
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;
+    color: #a9968a;
+}
+
+.banner-more-details {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    color: #FFCC66;
+}
+
+
+/* About */
+
+.about-text {
+    padding-left: 44px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #666666;
+}
+
+
+/* Services */
+
+.services-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.services-item {
+    width: 573px;
+    height: 326px;
+    margin-bottom: 24px;
+}
+
+.services-card {
+    padding: 24px;
+}
+
+.services-link {
+    display: inline;
+    margin-bottom: 22px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #CC9933;
+}
+
+
+/* Advantage */
+
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.advantage-item {
+    width: 276px;
+    height: 276px;
+    padding: 45px;
+    margin-bottom: 24px;
+}
+
+.card-background {
+    margin-bottom: 20px;
+}
+
+
+/* hostels */
+
+.hostels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hostels-item {
+    width: 374px;
+    height: 442px;
+    margin-bottom: 24px;
+}
+
+.hostels-card {
+    padding: 24px;
+}
+
+.hostels-card-price-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.hostels-card-price {
+    margin-right: 5px;
+}
+
+.hostels-card-price-from {
+    margin-right: 5px;
+    color: #E6E6E6;
+}
+
+.hostels-card-name-hostel {
+    margin-bottom: 18px;
+}
+
+.hostels-card-country {
+    margin-bottom: 18px;
+    color: #E6E6E6;
+}
+
+.hostels-card-btn {
+    min-width: 100px;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #CC9933;
+}
+
+.hostels-card-price-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hostels-card-all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hostels-card-title-link {
+    margin-bottom: 52px;
+}
+
+.hostels-card-link {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    background-image: url('../img/png/triangle-white.png');
+    color: #FFFFFF;
+}
