@@ -167,8 +167,6 @@ html {
 }
 
 .header-bottom {
-    display: flex;
-    justify-content: flex-start;
     width: 100%;
 }
 
@@ -180,8 +178,9 @@ html {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    height: 70px;
     border: 1px solid #FFFFFF;
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: #FFFFFF;
 }
 
@@ -268,12 +267,13 @@ html {
 }
 
 .reservation-field {
+    min-width: 518px;
     height: 70px;
     margin-bottom: 22px;
     padding: 22px;
     font-size: 16px;
     background-color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 12px;
     border: none;
 }
 
@@ -315,9 +315,11 @@ html {
 }
 
 .banner-heading {
+    margin-bottom: 40px;
+    width: 321px;
     font-size: 66px;
-    line-height: 1;
-    font-weight: 300;
+    line-height: 58px;
+    font-weight: 800;
     color: #FFFFFF;
 }
 
@@ -344,10 +346,14 @@ html {
 
 /* About */
 
+.about {
+    width: 880px;
+}
+
 .about-text {
     padding-left: 44px;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 32px;
     font-weight: 300;
     color: #666666;
 }
@@ -370,9 +376,10 @@ html {
 }
 
 .services-card {
+    padding-top: 36px;
+    padding-bottom: 45px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 36px;
 }
 
 .services-card-img {
@@ -429,8 +436,9 @@ html {
 
 .hostels-card {
     padding-top: 36px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-bottom: 44px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 
 .hostels-card-img {
@@ -481,8 +489,12 @@ html {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 442px;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/png/41.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 12px;
 }
 
 .hostels-card-title-link {
